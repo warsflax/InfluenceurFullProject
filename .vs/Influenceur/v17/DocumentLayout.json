@@ -1,0 +1,298 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\views\\influenceurtypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\views\\influenceurtypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\views\\influenceurtypes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\views\\influenceurtypes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\controllers\\influenceurtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\controllers\\influenceurtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\models\\influenceurtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\models\\influenceurtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\migrations\\20250125222319_maj database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\migrations\\20250125222319_maj database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\migrations\\20250125195555_initialisationmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\migrations\\20250125195555_initialisationmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\models\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\models\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\models\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\models\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\data\\myappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\data\\myappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\viewmodel\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\viewmodel\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\influenceur.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\influenceur.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|d:\\area_51\\influenceur project\\influenceurfullproject\\influenceur\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC3B9059-7657-48D5-8197-2B78501BFE7E}|Influenceur\\Influenceur.csproj|solutionrelative:influenceur\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyAppContext.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Data\\MyAppContext.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Data\\MyAppContext.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Data\\MyAppContext.cs",
+              "RelativeToolTip": "Influenceur\\Data\\MyAppContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T19:35:23.154Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Views\\InfluenceurTypes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Influenceur\\Views\\InfluenceurTypes\\Index.cshtml",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Views\\InfluenceurTypes\\Index.cshtml",
+              "RelativeToolTip": "Influenceur\\Views\\InfluenceurTypes\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T23:04:44.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Views\\InfluenceurTypes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Influenceur\\Views\\InfluenceurTypes\\Create.cshtml",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Views\\InfluenceurTypes\\Create.cshtml",
+              "RelativeToolTip": "Influenceur\\Views\\InfluenceurTypes\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T22:41:47.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfluenceurTypesController.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Controllers\\InfluenceurTypesController.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Controllers\\InfluenceurTypesController.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Controllers\\InfluenceurTypesController.cs",
+              "RelativeToolTip": "Influenceur\\Controllers\\InfluenceurTypesController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T22:38:16.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250125222319_maj database.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Migrations\\20250125222319_maj database.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Migrations\\20250125222319_maj database.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Migrations\\20250125222319_maj database.cs",
+              "RelativeToolTip": "Influenceur\\Migrations\\20250125222319_maj database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T22:23:20.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Influenceur\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T19:58:30.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "Influenceur\\Views\\Users\\Create.cshtml",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "Influenceur\\Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T19:59:10.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250125195555_InitialisationMigration.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Migrations\\20250125195555_InitialisationMigration.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Migrations\\20250125195555_InitialisationMigration.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Migrations\\20250125195555_InitialisationMigration.cs",
+              "RelativeToolTip": "Influenceur\\Migrations\\20250125195555_InitialisationMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T19:55:56.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InfluenceurType.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\InfluenceurType.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Models\\InfluenceurType.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\InfluenceurType.cs",
+              "RelativeToolTip": "Influenceur\\Models\\InfluenceurType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T18:59:09.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Influenceur\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T22:11:26.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sponsor.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\Sponsor.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Models\\Sponsor.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\Sponsor.cs",
+              "RelativeToolTip": "Influenceur\\Models\\Sponsor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T18:56:07.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Models\\User.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\User.cs",
+              "RelativeToolTip": "Influenceur\\Models\\User.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T18:54:23.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Influenceur.csproj",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Influenceur.csproj",
+              "RelativeDocumentMoniker": "Influenceur\\Influenceur.csproj",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Influenceur.csproj",
+              "RelativeToolTip": "Influenceur\\Influenceur.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-25T20:13:40.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Identity.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\Identity.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Models\\Identity.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Models\\Identity.cs",
+              "RelativeToolTip": "Influenceur\\Models\\Identity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T19:02:01.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateUserViewModel.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\ViewModel\\CreateUserViewModel.cs",
+              "RelativeDocumentMoniker": "Influenceur\\ViewModel\\CreateUserViewModel.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\ViewModel\\CreateUserViewModel.cs",
+              "RelativeToolTip": "Influenceur\\ViewModel\\CreateUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T20:14:14.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Program.cs",
+              "RelativeDocumentMoniker": "Influenceur\\Program.cs",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\Program.cs",
+              "RelativeToolTip": "Influenceur\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T19:54:54.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\appsettings.json",
+              "RelativeDocumentMoniker": "Influenceur\\appsettings.json",
+              "ToolTip": "D:\\Area_51\\Influenceur project\\InfluenceurFullProject\\Influenceur\\appsettings.json",
+              "RelativeToolTip": "Influenceur\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-25T19:35:32.88Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
