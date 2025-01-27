@@ -10,23 +10,23 @@ using Influenceur.Models;
 
 namespace Influenceur.Controllers
 {
-    public class InfluenceurTypesController : Controller
+    public class SponsorsController : Controller
     {
         private readonly MyAppContext _context;
 
-        public InfluenceurTypesController(MyAppContext context)
+        public SponsorsController(MyAppContext context)
         {
             _context = context;
         }
 
-        // GET: InfluenceurTypes
+        // GET: Sponsors
         public async Task<IActionResult> Index()
         {
-            var myAppContext = _context.influenceurs.Include(i => i.User);
+            var myAppContext = _context.sponsors.Include(s => s.User);
             return View(await myAppContext.ToListAsync());
         }
 
-        // GET: InfluenceurTypes/Details/5
+        // GET: Sponsors/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,18 +34,18 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var influenceurType = await _context.influenceurs
-                .Include(i => i.User)
+            var sponsor = await _context.sponsors
+                .Include(s => s.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (influenceurType == null)
+            if (sponsor == null)
             {
                 return NotFound();
             }
 
-            return View(influenceurType);
+            return View(sponsor);
         }
 
-        // GET: InfluenceurTypes/Create
+        // GET: Sponsors/Create
         public IActionResult Create(int userId)
         {
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
@@ -53,25 +53,25 @@ namespace Influenceur.Controllers
             return View();
         }
 
-        // POST: InfluenceurTypes/Create
+        // POST: Sponsors/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,SocialMedia,FollowersNumber,categorie,EngagementRate,UserId")] InfluenceurType influenceurType)
+        public async Task<IActionResult> Create([Bind("Id,FullName,WebSite,Industry,UserId")] Sponsor sponsor)
         {
+            
             if (ModelState.IsValid)
             {
-                _context.Add(influenceurType);
+                _context.Add(sponsor);
                 await _context.SaveChangesAsync();
-            return RedirectToAction("Create", "Identities", new { userId = influenceurType.UserId }); 
+                return RedirectToAction("Create", "Identities", new { userId = sponsor.UserId });
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", influenceurType.UserId);          
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", sponsor.UserId);
             return RedirectToAction(nameof(Index));
-
         }
 
-        // GET: InfluenceurTypes/Edit/5
+        // GET: Sponsors/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,23 +79,23 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var influenceurType = await _context.influenceurs.FindAsync(id);
-            if (influenceurType == null)
+            var sponsor = await _context.sponsors.FindAsync(id);
+            if (sponsor == null)
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", influenceurType.UserId);
-            return View(influenceurType);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", sponsor.UserId);
+            return View(sponsor);
         }
 
-        // POST: InfluenceurTypes/Edit/5
+        // POST: Sponsors/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,SocialMedia,FollowersNumber,categorie,EngagementRate,UserId")] InfluenceurType influenceurType)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,WebSite,Industry,UserId")] Sponsor sponsor)
         {
-            if (id != influenceurType.Id)
+            if (id != sponsor.Id)
             {
                 return NotFound();
             }
@@ -104,12 +104,12 @@ namespace Influenceur.Controllers
             {
                 try
                 {
-                    _context.Update(influenceurType);
+                    _context.Update(sponsor);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InfluenceurTypeExists(influenceurType.Id))
+                    if (!SponsorExists(sponsor.Id))
                     {
                         return NotFound();
                     }
@@ -120,11 +120,11 @@ namespace Influenceur.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", influenceurType.UserId);
-            return View(influenceurType);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", sponsor.UserId);
+            return View(sponsor);
         }
 
-        // GET: InfluenceurTypes/Delete/5
+        // GET: Sponsors/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -132,35 +132,35 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var influenceurType = await _context.influenceurs
-                .Include(i => i.User)
+            var sponsor = await _context.sponsors
+                .Include(s => s.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (influenceurType == null)
+            if (sponsor == null)
             {
                 return NotFound();
             }
 
-            return View(influenceurType);
+            return View(sponsor);
         }
 
-        // POST: InfluenceurTypes/Delete/5
+        // POST: Sponsors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var influenceurType = await _context.influenceurs.FindAsync(id);
-            if (influenceurType != null)
+            var sponsor = await _context.sponsors.FindAsync(id);
+            if (sponsor != null)
             {
-                _context.influenceurs.Remove(influenceurType);
+                _context.sponsors.Remove(sponsor);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool InfluenceurTypeExists(int id)
+        private bool SponsorExists(int id)
         {
-            return _context.influenceurs.Any(e => e.Id == id);
+            return _context.sponsors.Any(e => e.Id == id);
         }
     }
 }

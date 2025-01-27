@@ -10,23 +10,23 @@ using Influenceur.Models;
 
 namespace Influenceur.Controllers
 {
-    public class InfluenceurTypesController : Controller
+    public class IdentitiesController : Controller
     {
         private readonly MyAppContext _context;
 
-        public InfluenceurTypesController(MyAppContext context)
+        public IdentitiesController(MyAppContext context)
         {
             _context = context;
         }
 
-        // GET: InfluenceurTypes
+        // GET: Identities
         public async Task<IActionResult> Index()
         {
-            var myAppContext = _context.influenceurs.Include(i => i.User);
+            var myAppContext = _context.identities.Include(i => i.User);
             return View(await myAppContext.ToListAsync());
         }
 
-        // GET: InfluenceurTypes/Details/5
+        // GET: Identities/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,18 +34,18 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var influenceurType = await _context.influenceurs
+            var identity = await _context.identities
                 .Include(i => i.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (influenceurType == null)
+            if (identity == null)
             {
                 return NotFound();
             }
 
-            return View(influenceurType);
+            return View(identity);
         }
 
-        // GET: InfluenceurTypes/Create
+        // GET: Identities/Create
         public IActionResult Create(int userId)
         {
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
@@ -53,25 +53,24 @@ namespace Influenceur.Controllers
             return View();
         }
 
-        // POST: InfluenceurTypes/Create
+        // POST: Identities/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,SocialMedia,FollowersNumber,categorie,EngagementRate,UserId")] InfluenceurType influenceurType)
+        public async Task<IActionResult> Create([Bind("Id,IdType,IdRectoUrl,IdVersoUrl,UserId")] Identity identity)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(influenceurType);
+                _context.Add(identity);
                 await _context.SaveChangesAsync();
-            return RedirectToAction("Create", "Identities", new { userId = influenceurType.UserId }); 
+                return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", influenceurType.UserId);          
-            return RedirectToAction(nameof(Index));
-
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", identity.UserId);
+            return View(identity);
         }
 
-        // GET: InfluenceurTypes/Edit/5
+        // GET: Identities/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,23 +78,23 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var influenceurType = await _context.influenceurs.FindAsync(id);
-            if (influenceurType == null)
+            var identity = await _context.identities.FindAsync(id);
+            if (identity == null)
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", influenceurType.UserId);
-            return View(influenceurType);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", identity.UserId);
+            return View(identity);
         }
 
-        // POST: InfluenceurTypes/Edit/5
+        // POST: Identities/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,SocialMedia,FollowersNumber,categorie,EngagementRate,UserId")] InfluenceurType influenceurType)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,IdType,IdRectoUrl,IdVersoUrl,UserId")] Identity identity)
         {
-            if (id != influenceurType.Id)
+            if (id != identity.Id)
             {
                 return NotFound();
             }
@@ -104,12 +103,12 @@ namespace Influenceur.Controllers
             {
                 try
                 {
-                    _context.Update(influenceurType);
+                    _context.Update(identity);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InfluenceurTypeExists(influenceurType.Id))
+                    if (!IdentityExists(identity.Id))
                     {
                         return NotFound();
                     }
@@ -120,11 +119,11 @@ namespace Influenceur.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", influenceurType.UserId);
-            return View(influenceurType);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", identity.UserId);
+            return View(identity);
         }
 
-        // GET: InfluenceurTypes/Delete/5
+        // GET: Identities/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -132,35 +131,35 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var influenceurType = await _context.influenceurs
+            var identity = await _context.identities
                 .Include(i => i.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (influenceurType == null)
+            if (identity == null)
             {
                 return NotFound();
             }
 
-            return View(influenceurType);
+            return View(identity);
         }
 
-        // POST: InfluenceurTypes/Delete/5
+        // POST: Identities/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var influenceurType = await _context.influenceurs.FindAsync(id);
-            if (influenceurType != null)
+            var identity = await _context.identities.FindAsync(id);
+            if (identity != null)
             {
-                _context.influenceurs.Remove(influenceurType);
+                _context.identities.Remove(identity);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool InfluenceurTypeExists(int id)
+        private bool IdentityExists(int id)
         {
-            return _context.influenceurs.Any(e => e.Id == id);
+            return _context.identities.Any(e => e.Id == id);
         }
     }
 }

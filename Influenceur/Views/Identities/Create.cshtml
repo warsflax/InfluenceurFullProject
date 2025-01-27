@@ -1,0 +1,49 @@
+﻿@model Influenceur.Models.Identity
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Identity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" readonly />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div> 
+            <div class="form-group">
+                <label asp-for="IdType" class="control-label"></label>
+                <input asp-for="IdType" class="form-control" />
+                <span asp-validation-for="IdType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdRectoUrl" class="control-label"></label>
+                <input asp-for="IdRectoUrl" class="form-control" />
+                <span asp-validation-for="IdRectoUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdVersoUrl" class="control-label"></label>
+                <input asp-for="IdVersoUrl" class="form-control" />
+                <span asp-validation-for="IdVersoUrl" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

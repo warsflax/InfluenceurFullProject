@@ -68,7 +68,7 @@ namespace Influenceur.Controllers
                         return RedirectToAction("Create", "InfluenceurTypes", new { userId = user.Id });
 
                     case "Sponsor":
-                        return RedirectToAction(nameof(Index));
+                        return RedirectToAction("Create", "Sponsors", new { userId = user.Id });
 
                 }
             }

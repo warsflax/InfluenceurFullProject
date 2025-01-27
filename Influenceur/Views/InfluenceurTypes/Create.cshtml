@@ -13,6 +13,11 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" readonly />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="SocialMedia" class="control-label"></label>
                 <input asp-for="SocialMedia" class="form-control" />
                 <span asp-validation-for="SocialMedia" class="text-danger"></span>
@@ -32,11 +37,7 @@
                 <input asp-for="EngagementRate" class="form-control" />
                 <span asp-validation-for="EngagementRate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" readonly />
-                <span asp-validation-for="UserId" class="text-danger"></span>
-            </div>
+
 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
