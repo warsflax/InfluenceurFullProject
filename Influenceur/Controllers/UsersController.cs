@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Influenceur.Data;
 using Influenceur.Models;
 using Influenceur.ViewModel;
+using Influenceur.Services;
 
 namespace Influenceur.Controllers
 {
@@ -55,10 +56,16 @@ namespace Influenceur.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FullName,UserType,Email,Password,ProfilUrl")] User user)
+        public async Task<IActionResult> Create([Bind("Id,FullName,UserType,Email,Password,ProfilImage")] User user)
         {
             if (ModelState.IsValid)
             {
+                if (user.ProfilImage != null)
+                {
+                    user.ProfilUrl = await FileHelper.SaveFileAsync(user.ProfilImage, "assets/pdp");
+
+                }
+
 
                 _context.Add(user);
                 await _context.SaveChangesAsync();

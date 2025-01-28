@@ -15,6 +15,10 @@ namespace Influenceur.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("UserId") == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
             return View();
         }
 

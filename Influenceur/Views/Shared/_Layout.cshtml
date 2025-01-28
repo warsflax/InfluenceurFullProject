@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -28,6 +31,19 @@
                         </li>
                     </ul>
                 </div>
+                @if (HttpContextAccessor.HttpContext.Session.GetString("UserId") != null)
+                {
+                    <form asp-action="Logout" asp-controller="Account" method="post">
+                        <button type="submit" class="btn btn-link">Se déconnecter</button>
+                    </form>
+                }
+                else
+                {
+                    <a asp-action="Login" asp-controller="Account" class="btn btn-link">Se connecter</a>
+                }
+
+
+
             </div>
         </nav>
     </header>

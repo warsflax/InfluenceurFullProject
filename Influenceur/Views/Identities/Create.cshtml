@@ -10,27 +10,32 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" readonly />
+                <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" @* readonly *@ />
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div> 
+           
             <div class="form-group">
                 <label asp-for="IdType" class="control-label"></label>
-                <input asp-for="IdType" class="form-control" />
+                <select asp-for="IdType" class="form-control">
+                    <option value="passeport">Passeport</option>
+                    <option value="Carte_Nationnal">Carte Nationnal</option>
+                    <option value="Carte_Sejour">Carte Séjour</option>
+                </select>
                 <span asp-validation-for="IdType" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdRectoUrl" class="control-label"></label>
-                <input asp-for="IdRectoUrl" class="form-control" />
-                <span asp-validation-for="IdRectoUrl" class="text-danger"></span>
+                <label asp-for="IdRectoImage" class="control-label">Votre Id recto</label>
+                <input asp-for="IdRectoImage" type="file" class="form-control" />
+                <span asp-validation-for="IdRectoImage" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdVersoUrl" class="control-label"></label>
-                <input asp-for="IdVersoUrl" class="form-control" />
-                <span asp-validation-for="IdVersoUrl" class="text-danger"></span>
+                <label asp-for="IdVersoImage" class="control-label">Votre Id recto</label>
+                <input asp-for="IdVersoImage" type="file" class="form-control" />
+                <span asp-validation-for="IdVersoImage" class="text-danger"></span>
             </div>
            
             <div class="form-group">

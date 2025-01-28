@@ -34,11 +34,12 @@
                 @Html.DisplayFor(modelItem => item.IdType)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdRectoUrl)
+                    <img src="@item.IdRectoUrl" alt="Image de ID recto" class="img-thumbnail" style="max-width: 150px;" />
+
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdVersoUrl)
-            </td>
+                    <img src="@item.IdVersoUrl" alt="Image de ID Verso" class="img-thumbnail" style="max-width: 150px;" />
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.User.Id)
             </td>

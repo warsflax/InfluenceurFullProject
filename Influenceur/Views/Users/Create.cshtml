@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="FullName" class="control-label"></label>
@@ -27,11 +27,13 @@
                 <input asp-for="Password" type="password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-              <div class="form-group">
-                <label asp-for="ProfilUrl" class="control-label"></label>
-                <input asp-for="ProfilUrl" class="form-control" />
-                <span asp-validation-for="ProfilUrl" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="ProfilImage" class="control-label">Image de profil</label>
+                <input asp-for="ProfilImage" type="file" class="form-control" />
+                <span asp-validation-for="ProfilImage" class="text-danger"></span>
             </div>
+
+
             <div class="form-group">
                 <label asp-for="UserType" class="control-label"></label>
                 <select asp-for="UserType" class="form-control">

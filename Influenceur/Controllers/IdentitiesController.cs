@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Influenceur.Data;
 using Influenceur.Models;
+using Influenceur.Services;
 
 namespace Influenceur.Controllers
 {
@@ -58,10 +59,20 @@ namespace Influenceur.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdType,IdRectoUrl,IdVersoUrl,UserId")] Identity identity)
+        public async Task<IActionResult> Create([Bind("UserId,IdType,IdRectoImage,IdVersoImage")] Identity identity)
         {
             if (ModelState.IsValid)
             {
+                if (identity.IdRectoImage != null)
+                {
+                    identity.IdRectoUrl = await FileHelper.SaveFileAsync(identity.IdRectoImage, "assets/Id");
+
+                }
+                if (identity.IdVersoImage != null)
+                {
+                    identity.IdVersoUrl = await FileHelper.SaveFileAsync(identity.IdVersoImage, "assets/Id");
+
+                }
                 _context.Add(identity);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

@@ -13,9 +13,11 @@ namespace Influenceur.Models
         public string? ProfilUrl { get; set; }
         public DateTime? CreatedDate { get; set; }
 
-       
+      
         public Sponsor? Sponsor { get; set; }
         public InfluenceurType? Influenceur { get; set; }
         public Identity? Identity { get; set; }
+        [NotMapped] // Ne pas mapper cette propriété dans la base de données
+        public IFormFile? ProfilImage { get; set; }
     }
 }

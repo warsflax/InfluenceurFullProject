@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Influenceur")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95769b49ca07634a43df7a5f3021268fefe0322b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d1044a5a5a74c683d24a8c323d4900bccbd3173")]
 [assembly: System.Reflection.AssemblyProductAttribute("Influenceur")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Influenceur")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
