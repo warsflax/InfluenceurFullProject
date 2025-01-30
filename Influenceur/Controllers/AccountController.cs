@@ -41,6 +41,12 @@ namespace Influenceur.Controllers
                     // Redirige vers une autre page (par exemple la page d'accueil)
                     return RedirectToAction("Index", "Home");
                 }
+                if (user == null)
+                {
+                    // Utilisateur non trouvé, afficher un message d'erreur
+                    ModelState.AddModelError(string.Empty, "Utilisateur ou mot de passe incorrect.");
+                    return View(model);
+                }
 
                 ModelState.AddModelError("", "Adresse e-mail ou mot de passe incorrect.");
             }

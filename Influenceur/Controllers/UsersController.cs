@@ -56,31 +56,43 @@ namespace Influenceur.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FullName,UserType,Email,Password,ProfilImage")] User user)
+        public async Task<IActionResult> Create([Bind("FullName,UserType,Email,Password,ProfilImage,ProfilUrl,Adresse,Complement_adresse,Code_postale,City,Country,Phone_number,Sexe,Language,Role,Status,Date_naissance, CPassword")] User user)
         {
+            // Vérification de la correspondance des mots de passe
+            if (user.Password != user.CPassword)
+            {
+                ModelState.AddModelError("CPassword", "Les mots de passe ne sont pas identiques.");
+            }
+
+            // Vérification si l'email existe déjà dans la base de données
+            var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
+            if (existingUser != null)
+            {
+                ModelState.AddModelError("Email", "Cet email est déjà utilisé.");
+            }
+
             if (ModelState.IsValid)
             {
                 if (user.ProfilImage != null)
                 {
                     user.ProfilUrl = await FileHelper.SaveFileAsync(user.ProfilImage, "assets/pdp");
-
                 }
-
-
                 _context.Add(user);
                 await _context.SaveChangesAsync();
+
+                // Rediriger en fonction du type d'utilisateur
                 switch (user.UserType)
                 {
                     case "Influenceur":
-                        return RedirectToAction("Create", "InfluenceurTypes", new { userId = user.Id });
+                        return RedirectToAction("Create", "SocialMediaAccounts", new { userId = user.Id });
 
                     case "Sponsor":
                         return RedirectToAction("Create", "Sponsors", new { userId = user.Id });
-
                 }
             }
             return View(user);
         }
+
 
         // GET: Users/Edit/5
         public async Task<IActionResult> Edit(int? id)

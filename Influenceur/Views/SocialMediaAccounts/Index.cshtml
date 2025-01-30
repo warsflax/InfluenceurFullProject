@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Influenceur.Models.SocialMediaAccount>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlatformName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FollowersCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FemaleRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopCities)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopCountries)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgeRange)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlatformName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FollowersCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FemaleRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopCities)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopCountries)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeRange)
+            </td>
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

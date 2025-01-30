@@ -1,0 +1,75 @@
+﻿@model Influenceur.Models.SocialMediaAccount
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>SocialMediaAccount</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PlatformName" class="control-label"></label>
+                <input asp-for="PlatformName" class="form-control" />
+                <span asp-validation-for="PlatformName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FollowersCount" class="control-label"></label>
+                <input asp-for="FollowersCount" class="form-control" />
+                <span asp-validation-for="FollowersCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManRate" class="control-label"></label>
+                <input asp-for="ManRate" class="form-control" />
+                <span asp-validation-for="ManRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FemaleRate" class="control-label"></label>
+                <input asp-for="FemaleRate" class="form-control" />
+                <span asp-validation-for="FemaleRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopCities" class="control-label"></label>
+                <input asp-for="TopCities" class="form-control" />
+                <span asp-validation-for="TopCities" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopCountries" class="control-label"></label>
+                <input asp-for="TopCountries" class="form-control" />
+                <span asp-validation-for="TopCountries" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgeRange" class="control-label"></label>
+                <input asp-for="AgeRange" class="form-control" />
+                <span asp-validation-for="AgeRange" class="text-danger"></span>
+            </div>
+         
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

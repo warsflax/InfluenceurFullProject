@@ -60,32 +60,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdGllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/InfluenceurTypes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mbHVlbmNldXJUeXBlc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/InfluenceurTypes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mbHVlbmNldXJUeXBlc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/InfluenceurTypes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mbHVlbmNldXJUeXBlc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/InfluenceurTypes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mbHVlbmNldXJUeXBlc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/InfluenceurTypes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mbHVlbmNldXJUeXBlc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/SocialMediaAccounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFBY2NvdW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/SocialMediaAccounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFBY2NvdW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/SocialMediaAccounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFBY2NvdW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/SocialMediaAccounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFBY2NvdW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/SocialMediaAccounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsTWVkaWFBY2NvdW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Area_51/Influenceur project/InfluenceurFullProject/Influenceur/Views/Sponsors/Create.cshtml]

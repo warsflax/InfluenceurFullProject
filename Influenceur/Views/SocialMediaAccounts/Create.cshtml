@@ -1,0 +1,116 @@
+﻿@model Influenceur.Models.SocialMediaAccount
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>SocialMediaAccount</h4>
+<hr />
+<div class="container px-4 py-5 mx-auto">
+    <div class="card card1 mx-auto p-4">
+        <!-- Ajout de mx-auto et p-4 pour centrer -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Réduction de la largeur du formulaire -->
+                <div class="text-center mb-4">
+                    <img id="logo" src="https://i.imgur.com/PSXxjNY.png" />
+                    <h3 class="mt-3 heading">We are HussMons</h3>
+
+                </div>
+
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="UserId" class="control-label"></label>
+                        <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" readonly />
+                        <span asp-validation-for="UserId" class="text-danger"></span>
+                    </div>
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="PlatformName" class="control-label"></label>
+                        <input asp-for="PlatformName" class="form-control" />
+                        <span asp-validation-for="PlatformName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="UserName" class="control-label"></label>
+                        <input asp-for="UserName" class="form-control" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Url" class="control-label"></label>
+                        <input asp-for="Url" class="form-control" />
+                        <span asp-validation-for="Url" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FollowersCount" class="control-label"></label>
+                        <input asp-for="FollowersCount" class="form-control" />
+                        <span asp-validation-for="FollowersCount" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ManRate" class="control-label"></label>
+                        <input asp-for="ManRate" class="form-control" />
+                        <span asp-validation-for="ManRate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FemaleRate" class="control-label"></label>
+                        <input asp-for="FemaleRate" class="form-control" />
+                        <span asp-validation-for="FemaleRate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TopCities" class="control-label"></label>
+                        <input asp-for="TopCities" class="form-control" />
+                        <span asp-validation-for="TopCities" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TopCountries" class="control-label"></label>
+                        <input asp-for="TopCountries" class="form-control" />
+                        <span asp-validation-for="TopCountries" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AgeRange" class="control-label"></label>
+                        <input asp-for="AgeRange" class="form-control" />
+                        <span asp-validation-for="AgeRange" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Langue" class="control-label"></label>
+                        <input asp-for="Langue" class="form-control" />
+                        <span asp-validation-for="Langue" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Niches" class="control-label"></label>
+                        <input asp-for="Niches" class="form-control" />
+                        <span asp-validation-for="Niches" class="text-danger"></span>
+                    </div> 
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group text-center">
+                     
+                        <input type="submit" name="redirectTo" value="ADD New Social Media" class="btn-block btn-color" />
+                        <input type="submit" name="redirectTo" value="Next" class="btn-block btn-color" />
+
+                    </div>
+                </form>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<link href="~/css/style.css" rel="stylesheet" asp-append-version="true" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

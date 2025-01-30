@@ -36,6 +36,7 @@ D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bo
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\css\Style.css
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
@@ -60,35 +61,69 @@ D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bo
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 D:\Area_51\Influenceur project\InfluenceurFullProject\Influenceur\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\assets\Id\0c87af5e-61f7-4ddc-a216-a7319e73f773.jpg
+wwwroot\assets\Id\14b41f0e-d24d-4e7c-802f-517137386d2b.jpg
+wwwroot\assets\Id\168dd27c-4a18-462d-8b20-34c3b1ea6e22.jpg
 wwwroot\assets\Id\170de1a0-75d1-4ea4-8015-8b320359ef22.jpg
+wwwroot\assets\Id\18cdc18a-1745-45d4-b317-f922c1265470.jpg
+wwwroot\assets\Id\1bbed1b1-8481-47f4-b06c-307586224755.jpg
 wwwroot\assets\Id\23449919-c866-4afd-906a-d89225b837b7.jpg
 wwwroot\assets\Id\247ff6e6-960d-4816-93ae-a76b73e0d1d0.jpg
+wwwroot\assets\Id\36a1354c-b8b6-4df0-8e95-333a6366678c.jpg
+wwwroot\assets\Id\5b0bdd41-0cfb-4c80-bdf8-b49aea16a80c.jpg
+wwwroot\assets\Id\5d640e38-7091-4177-805b-669b88bb2301.jpg
+wwwroot\assets\Id\5ddde549-71fa-43e1-a8f0-c50f3d7d5126.jpg
 wwwroot\assets\Id\5fa4abda-f3f8-4180-aaa2-8471f0655118.jpg
+wwwroot\assets\Id\634782a9-167e-47a3-a13a-6064a459aa7b.jpg
 wwwroot\assets\Id\65e7eca4-75da-4e82-9f7a-5006029b1b68.jpg
 wwwroot\assets\Id\69a9c80d-ead3-431a-817d-80d1dc10117d.jpg
+wwwroot\assets\Id\788689e1-4861-4455-a900-7566a50f9169.jpg
 wwwroot\assets\Id\78f3d974-c570-4ceb-aa1d-18b0519d13cb.jpg
+wwwroot\assets\Id\795391d1-fbc8-4532-881a-0614c56726ea.jpg
+wwwroot\assets\Id\79d6f659-5564-46c7-936e-f9de416afb55.jpg
+wwwroot\assets\Id\7ae446b5-42bc-48fc-a76c-ae62b560b56b.jpg
+wwwroot\assets\Id\80240089-ca51-45d7-97cb-24550b8cddf4.jpg
 wwwroot\assets\Id\87722c81-70ea-4245-a570-c08436a16cc5.jpg
+wwwroot\assets\Id\9388f49a-067e-4e94-b320-c6574f2c4b43.jpg
+wwwroot\assets\Id\98ce759a-639e-450e-9bf2-2c1851a0162d.jpg
 wwwroot\assets\Id\9ba8c30b-f50d-4c1a-b41d-5f573c412ce7.jpg
 wwwroot\assets\Id\a26b6ba2-c340-4e51-af4c-f7bd4484014b.jpg
 wwwroot\assets\Id\a61b4ee3-331a-4a81-8020-a0e6c8f5941f.jpg
 wwwroot\assets\Id\ac32fc11-7e3f-46f6-b9b6-2cd94e577ee3.jpg
+wwwroot\assets\Id\af16db68-d5ec-4f9c-878a-2aab09fa89d4.jpg
 wwwroot\assets\Id\be6f2c5a-6ab2-4429-b9d6-14a32c842c9c.jpg
 wwwroot\assets\Id\c01f4818-eaef-444a-8008-eae63d96241b.jpg
+wwwroot\assets\Id\c476db45-697b-4c98-a4c2-08eea46f4b75.jpg
 wwwroot\assets\Id\c5cc624c-f35b-4555-97d9-5b8ec7c2e29e.jpg
 wwwroot\assets\Id\cb7a5607-f869-4da4-a326-9119d52bcacd.jpg
+wwwroot\assets\Id\cbe439b5-7d36-4ddb-8b21-a4ea28cfd2f9.jpg
+wwwroot\assets\Id\d0828adf-3d77-4a14-ae5b-bcdc63568831.jpg
+wwwroot\assets\Id\d09bb7f6-e5bd-4c2f-b9fa-d97f68cf71f5.jpg
+wwwroot\assets\Id\da5defde-d0f5-4da4-b95f-95eedc3f2133.jpg
 wwwroot\assets\Id\f0085475-c114-4d1b-a038-105e09966e6d.jpg
 wwwroot\assets\Id\f7a3b440-1ec8-448d-a8d8-4205d0749792.jpg
+wwwroot\assets\pdp\018ef2a4-5510-4c6b-a785-d7ea6a765804.jpg
 wwwroot\assets\pdp\0e37dd34-1b02-42c5-bfad-9c5143552874.jpg
+wwwroot\assets\pdp\21e0421c-23f4-47e2-8102-6eb0b384a9a3.jpg
 wwwroot\assets\pdp\2502fcdc-7a8d-4c77-b651-f1321a222b3a.jpg
 wwwroot\assets\pdp\3350eaca-e3f5-4b7c-8ebe-67ab6d751bf9.jpg
+wwwroot\assets\pdp\3c1b33ff-8379-4215-8352-1b5faf683140.jpg
+wwwroot\assets\pdp\42d259d9-db00-4cd5-98bc-ac015b0bcb65.jpg
 wwwroot\assets\pdp\4cb711f8-1299-4ad9-8573-b5ccd7ea1965.jpg
 wwwroot\assets\pdp\4ea61b75-8209-45f1-8073-eb9d21e8ebad.jpg
+wwwroot\assets\pdp\56115911-d84e-4d74-89ba-285d1b7df01b.jpg
 wwwroot\assets\pdp\654068fb-916d-45a0-8b4b-bd9ea7047351.jpg
+wwwroot\assets\pdp\82472a02-93cc-4185-8ba8-2d3fc5717337.jpg
+wwwroot\assets\pdp\98278fcf-32bc-439d-a675-0716ecdbf913.jpg
 wwwroot\assets\pdp\a535229d-386b-4414-839e-13167a62e6ec.jpg
 wwwroot\assets\pdp\a81f5307-de0c-4292-81c5-7030a510b7e4.jpg
 wwwroot\assets\pdp\aa8c9478-60f8-4ad0-839f-2b3045bd8024.jpg
+wwwroot\assets\pdp\c06f97b7-4bed-44bb-81e6-1c48185cf5bc.jpg
+wwwroot\assets\pdp\c0b913f3-08ee-48e6-a975-add5561eab8a.jpg
 wwwroot\assets\pdp\c34f24f3-2e77-4fd6-80de-49f71cb1ec0f.jpg
+wwwroot\assets\pdp\e845cce7-93fc-497a-9416-6396c03a61ee.jpg
 wwwroot\css\site.css
+wwwroot\css\Style.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

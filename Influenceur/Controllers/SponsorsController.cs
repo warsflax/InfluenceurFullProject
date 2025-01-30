@@ -22,7 +22,7 @@ namespace Influenceur.Controllers
         // GET: Sponsors
         public async Task<IActionResult> Index()
         {
-            var myAppContext = _context.sponsors.Include(s => s.User);
+            var myAppContext = _context.Sponsors.Include(s => s.User);
             return View(await myAppContext.ToListAsync());
         }
 
@@ -34,7 +34,7 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var sponsor = await _context.sponsors
+            var sponsor = await _context.Sponsors
                 .Include(s => s.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (sponsor == null)
@@ -58,7 +58,7 @@ namespace Influenceur.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FullName,WebSite,Industry,UserId")] Sponsor sponsor)
+        public async Task<IActionResult> Create([Bind("Id,FullName,WebSite,Industry,Description,UserId")] Sponsor sponsor)
         {
             
             if (ModelState.IsValid)
@@ -79,7 +79,7 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var sponsor = await _context.sponsors.FindAsync(id);
+            var sponsor = await _context.Sponsors.FindAsync(id);
             if (sponsor == null)
             {
                 return NotFound();
@@ -132,7 +132,7 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var sponsor = await _context.sponsors
+            var sponsor = await _context.Sponsors
                 .Include(s => s.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (sponsor == null)
@@ -148,10 +148,10 @@ namespace Influenceur.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var sponsor = await _context.sponsors.FindAsync(id);
+            var sponsor = await _context.Sponsors.FindAsync(id);
             if (sponsor != null)
             {
-                _context.sponsors.Remove(sponsor);
+                _context.Sponsors.Remove(sponsor);
             }
 
             await _context.SaveChangesAsync();
@@ -160,7 +160,7 @@ namespace Influenceur.Controllers
 
         private bool SponsorExists(int id)
         {
-            return _context.sponsors.Any(e => e.Id == id);
+            return _context.Sponsors.Any(e => e.Id == id);
         }
     }
 }

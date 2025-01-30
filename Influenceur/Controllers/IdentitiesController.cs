@@ -14,16 +14,19 @@ namespace Influenceur.Controllers
     public class IdentitiesController : Controller
     {
         private readonly MyAppContext _context;
+        private readonly ILogger<IdentitiesController> _logger;
 
-        public IdentitiesController(MyAppContext context)
+        public IdentitiesController(MyAppContext context, ILogger<IdentitiesController> logger )
         {
             _context = context;
+            _logger = logger;
+          
         }
 
         // GET: Identities
         public async Task<IActionResult> Index()
         {
-            var myAppContext = _context.identities.Include(i => i.User);
+            var myAppContext = _context.Identities.Include(i => i.User);
             return View(await myAppContext.ToListAsync());
         }
 
@@ -35,7 +38,7 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var identity = await _context.identities
+            var identity = await _context.Identities
                 .Include(i => i.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (identity == null)
@@ -59,26 +62,59 @@ namespace Influenceur.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,IdType,IdRectoImage,IdVersoImage")] Identity identity)
+        public async Task<IActionResult> Create([Bind("UserId,IdType,IdRectoImage,IdVersoImage,SelfiImage")] Identity identity)
         {
-            if (ModelState.IsValid)
+            try
             {
-                if (identity.IdRectoImage != null)
+                if (ModelState.IsValid)
                 {
-                    identity.IdRectoUrl = await FileHelper.SaveFileAsync(identity.IdRectoImage, "assets/Id");
+                    // Vérifier que SelfiImage a bien été capturée et envoyée
+                    if (identity.SelfiImage != null)
+                    {
+                        // Sauvegarde de l'image
+                        identity.SelfiUrl = await FileHelper.SaveFileAsync(identity.SelfiImage, "assets/Id");
+                    }
 
-                }
-                if (identity.IdVersoImage != null)
-                {
-                    identity.IdVersoUrl = await FileHelper.SaveFileAsync(identity.IdVersoImage, "assets/Id");
+                    if (identity.IdRectoImage != null)
+                    {
+                        identity.IdRectoUrl = await FileHelper.SaveFileAsync(identity.IdRectoImage, "assets/Id");
+                    }
+                    if (identity.IdVersoImage != null)
+                    {
+                        identity.IdVersoUrl = await FileHelper.SaveFileAsync(identity.IdVersoImage, "assets/Id");
+                    }
 
+                    // Ajouter l'entité Identity
+                    _context.Add(identity);
+                    await _context.SaveChangesAsync();
+
+                    // Après la création de l'identité, mettre à jour le statut de l'utilisateur
+                    var user = await _context.Users.FindAsync(identity.UserId);
+                    if (user != null)
+                    {
+                        user.Status = "ID to verify"; // Définir le statut de l'utilisateur
+                        _context.Update(user);
+                        await _context.SaveChangesAsync();
+                    }
+
+                    return RedirectToAction("Login", "Account");
                 }
-                _context.Add(identity);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                // Si le modèle n'est pas valide, retourner à la vue avec les erreurs
+                ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", identity.UserId);
+                return View(identity);
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", identity.UserId);
-            return View(identity);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erreur lors de la création de l'identité");
+
+                // Ajouter un message d'erreur générique au ModelState pour l'afficher dans la vue
+                ModelState.AddModelError(string.Empty, "Une erreur s'est produite lors de la création. Veuillez réessayer.");
+
+                // Retourner à la vue avec le modèle et les erreurs
+                ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", identity.UserId);
+                return View(identity);
+            }
         }
 
         // GET: Identities/Edit/5
@@ -89,7 +125,7 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var identity = await _context.identities.FindAsync(id);
+            var identity = await _context.Identities.FindAsync(id);
             if (identity == null)
             {
                 return NotFound();
@@ -142,7 +178,7 @@ namespace Influenceur.Controllers
                 return NotFound();
             }
 
-            var identity = await _context.identities
+            var identity = await _context.Identities
                 .Include(i => i.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (identity == null)
@@ -158,10 +194,10 @@ namespace Influenceur.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var identity = await _context.identities.FindAsync(id);
+            var identity = await _context.Identities.FindAsync(id);
             if (identity != null)
             {
-                _context.identities.Remove(identity);
+                _context.Identities.Remove(identity);
             }
 
             await _context.SaveChangesAsync();
@@ -170,7 +206,7 @@ namespace Influenceur.Controllers
 
         private bool IdentityExists(int id)
         {
-            return _context.identities.Any(e => e.Id == id);
+            return _context.Identities.Any(e => e.Id == id);
         }
     }
 }

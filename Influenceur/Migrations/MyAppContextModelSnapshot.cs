@@ -31,15 +31,15 @@ namespace Influenceur.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("IdRectoUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdType")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdVersoUrl")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SelfiUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("UserId")
@@ -51,10 +51,10 @@ namespace Influenceur.Migrations
                         .IsUnique()
                         .HasFilter("[UserId] IS NOT NULL");
 
-                    b.ToTable("identities");
+                    b.ToTable("Identities");
                 });
 
-            modelBuilder.Entity("Influenceur.Models.InfluenceurType", b =>
+            modelBuilder.Entity("Influenceur.Models.SocialMediaAccount", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -62,31 +62,50 @@ namespace Influenceur.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("EngagementRate")
+                    b.Property<string>("AgeRange")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("FemaleRate")
                         .HasColumnType("float");
 
-                    b.Property<string>("FollowersNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SocialMedia")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("UserId")
+                    b.Property<int?>("FollowersCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("categorie")
-                        .IsRequired()
+                    b.Property<string>("Langue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("ManRate")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Niches")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlatformName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TopCities")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TopCountries")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId")
-                        .IsUnique()
-                        .HasFilter("[UserId] IS NOT NULL");
+                    b.HasIndex("UserId");
 
-                    b.ToTable("influenceurs");
+                    b.ToTable("SocialMediaAccounts");
                 });
 
             modelBuilder.Entity("Influenceur.Models.Sponsor", b =>
@@ -97,18 +116,20 @@ namespace Influenceur.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FullName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Industry")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("UserId")
                         .HasColumnType("int");
 
                     b.Property<string>("WebSite")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -117,7 +138,7 @@ namespace Influenceur.Migrations
                         .IsUnique()
                         .HasFilter("[UserId] IS NOT NULL");
 
-                    b.ToTable("sponsors");
+                    b.ToTable("Sponsors");
                 });
 
             modelBuilder.Entity("Influenceur.Models.User", b =>
@@ -128,19 +149,57 @@ namespace Influenceur.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Adresse")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Code_postale")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Complement_adresse")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("Date_naissance")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone_number")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfilUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sexe")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserType")
@@ -160,11 +219,13 @@ namespace Influenceur.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Influenceur.Models.InfluenceurType", b =>
+            modelBuilder.Entity("Influenceur.Models.SocialMediaAccount", b =>
                 {
                     b.HasOne("Influenceur.Models.User", "User")
-                        .WithOne("Influenceur")
-                        .HasForeignKey("Influenceur.Models.InfluenceurType", "UserId");
+                        .WithMany("SocialMediaAccounts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -182,7 +243,7 @@ namespace Influenceur.Migrations
                 {
                     b.Navigation("Identity");
 
-                    b.Navigation("Influenceur");
+                    b.Navigation("SocialMediaAccounts");
 
                     b.Navigation("Sponsor");
                 });
